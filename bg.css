@@ -1,0 +1,192 @@
+ @import url(var.css);
+
+.rightbg {
+   
+    position: absolute;
+    
+    width: 220px;
+    top: 50%;
+    right: 0px;
+    transform: translate(0%, -50%);
+    box-shadow: 0 0 1px 1px #32ccbc;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 28px;
+    font-family: roboto;
+    color: white;
+    /* padding: 10px; */
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+
+    
+    width: 0px;
+    backdrop-filter: blur(32px);
+    scrollbar-width: none;
+  
+
+
+}
+
+.bgSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 28px;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+/* .rightbg.hidden {
+    width: 200px;
+} */
+
+.imgbg{
+    width: 160px;
+    box-shadow:
+        #252934 1px 1px 20px 1px, #35ccbc -1px -1px 5px 2px;
+        position: relative;
+        box-sizing: content-box;
+        flex-grow: 1;
+        /* padding: 10px; */
+        transition: box-shadow .2s ease-in,transform .2s ease-in;
+       
+}
+
+#bg0{
+    margin-top: 20px;
+}
+
+#bg5{
+    margin-bottom: 20px;
+}
+ 
+.imgbg:hover{
+    
+    box-shadow:
+    #252934 1px 1px 20px 1px, #35ccbc -1px -1px 5px 2px, #35ccbc -1px -1px 10px 2px,#35ccbc -1px -1px 15px 2px;
+        transform: scale(1.05);
+        /* flex: 1.5; */
+
+        
+        /* padding: 10px; */
+       
+}
+
+.music {
+   
+    position: absolute;
+    
+    width: 220px;
+    top: 50%;
+    right: 0px;
+    transform: translate(0%, -50%);
+    box-shadow: 0 0 1px 1px #32ccbc;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+    font-family: roboto;
+    color: white;
+    /* padding: 10px; */
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+   
+
+    
+    /* width: 0px; */
+    backdrop-filter: blur(32px);
+    scrollbar-width: none;
+    /* flex-grow: 1; */
+    width: 0px;
+
+}
+
+.songSection{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+}
+
+.song{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    width: fit-content;
+    transition: .5s transform ease-in-out;
+   
+}
+
+.song:hover {
+    transform: scale(1.05);
+}
+
+.songName{
+    text-transform: none;
+    width: fit-content;
+}
+
+#s6{
+    margin-bottom: 15px;
+}
+.song img{
+    width: 46px;
+    box-shadow:
+        #252934 1px 1px 20px 1px, #35ccbc -1px -1px 5px 2px;
+        position: relative;
+        box-sizing: content-box;
+        flex-grow: 1;
+        /* padding: 10px; */
+        /* transition: box-shadow .2s ease-in,transform .2s ease-in; */
+       border-radius: 50%;
+       background-color: wheat;
+       padding: 4px;
+}
+
+#songbtns{
+    height: 10vh;
+    display: flex;justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* .song:hover img{
+    box-shadow:
+    #252934 1px 1px 20px 1px, #35ccbc -1px -1px 5px 2px, #35ccbc -1px -1px 10px 2px,#35ccbc -1px -1px 5px 2px;
+        transform: scale(1.05);
+} */
+
+.stopbtns img{
+  background: var(--breakBtnClr);
+  -webkit-box-shadow:
+        #252934 1px 1px 20px 1px, var(--breakClr) -1px -1px 5px 2px;
+            box-shadow:
+        #252934 1px 1px 20px 1px, var(--breakClr) -1px -1px 5px 2px;
+}
+
+

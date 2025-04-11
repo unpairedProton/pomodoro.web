@@ -1,0 +1,21 @@
+:root{
+    --background:linear-gradient(135deg, #252934, #12141a);
+    --studyClr:#35ccbc;
+    --studyLightClr:rgb(135,239,228);
+    --studybtnClr:linear-gradient(90deg, #32ccbc, #90f7ec);
+    --dark:#12141a;
+
+    --breakClr:#ffa4d8;
+    --brkLightClr:rgb(255,201,232);
+    /* --breakBtnClr:linear-gradient(90deg,#ef5dd7,#dc90f7); */
+    --breakBtnClr:linear-gradient(90deg,var(--breakClr),var(--brkLightClr));
+
+    --longBreakClr:#b3efbd;
+    --longBreakLightClr:rgb(213,250,219);
+
+    --longBreakBtnClr:linear-gradient(90deg,var(--longBreakClr),var(--longBreakLightClr));
+    /* --longBreakBtnClr:linear-gradient(90deg,#bbdb51,#92f790); */
+    --greenNatureClr:#b3efbd;
+    --woodyFont:Dela Gothic One;
+
+}

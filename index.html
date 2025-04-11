@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer 2</title>
+    <link rel="shortcut icon" href="/fav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="bg.css">
+    
+</head>
+
+<body>
+
+
+    <div class="con">
+        
+        <input type="range" name="" id="volume" min="0" max="100" value="70">
+        <video id="videobg" src="" loop></video>
+        
+
+
+        <div class="main">
+
+
+            <div id="title">
+                <div id="study">Study</div>
+                <div id="brk">Break</div>
+                <div id="longbrk">Long Break</div>
+            </div>
+            <div class="timer" id="timer">
+                <h1 id="min">25</h1>
+
+                <h1 id="cln">:</h1>
+                <h1 id="sec">00</h1>
+            </div>
+            <div class="modify" id="modify">
+                <div class="btn" id="add">+</div>
+                <div class="btn" id="addSome">Add 10 minutes</div>
+                <div class="btn" id="sub">-</div>
+            </div>
+            <div class="sessionDiv">
+                <div class="studySessions"></div>
+            </div>
+
+        </div>
+
+        <div class="side">
+            <div class="left" id="left">
+                <div class="icons">
+                    <div class="icnText" id="timerbtn">
+                        <svg class="sideIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="rgba(255,249,249,1)">
+                            <path
+                                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20ZM15.5355 7.05025L16.9497 8.46447L12 13.4142L10.5858 12L15.5355 7.05025Z">
+                            </path>
+                        </svg>
+                        <div id="text1" class="text">
+                            Timers
+                        </div>
+                    </div>
+
+                    <div class="icnText"
+                    id="bgbtn">
+                        <svg class="sideIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="rgba(255,255,255,1)">
+                            <path
+                                d="M20 3C20.5523 3 21 3.44772 21 4V5.757L19 7.757V5H5V13.1L9 9.1005L13.328 13.429L12.0012 14.7562L11.995 18.995L16.2414 19.0012L17.571 17.671L18.8995 19H19V16.242L21 14.242V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20ZM21.7782 7.80761L23.1924 9.22183L15.4142 17L13.9979 16.9979L14 15.5858L21.7782 7.80761ZM15.5 7C16.3284 7 17 7.67157 17 8.5C17 9.32843 16.3284 10 15.5 10C14.6716 10 14 9.32843 14 8.5C14 7.67157 14.6716 7 15.5 7Z">
+                            </path>
+                        </svg>
+                        <div id="text2" class="text">
+                            Backgrounds
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="icnText"
+                    id="songbtn">
+                    <svg class="sideIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.7134 8.12811L18.4668 8.69379C18.2864 9.10792 17.7136 9.10792 17.5331 8.69379L17.2866 8.12811C16.8471 7.11947 16.0555 6.31641 15.0677 5.87708L14.308 5.53922C13.8973 5.35653 13.8973 4.75881 14.308 4.57612L15.0252 4.25714C16.0384 3.80651 16.8442 2.97373 17.2761 1.93083L17.5293 1.31953C17.7058 0.893489 18.2942 0.893489 18.4706 1.31953L18.7238 1.93083C19.1558 2.97373 19.9616 3.80651 20.9748 4.25714L21.6919 4.57612C22.1027 4.75881 22.1027 5.35653 21.6919 5.53922L20.9323 5.87708C19.9445 6.31641 19.1529 7.11947 18.7134 8.12811ZM7 3H12V5H9V17C9 19.2091 7.20914 21 5 21C2.79086 21 1 19.2091 1 17C1 14.7909 2.79086 13 5 13C5.72857 13 6.41165 13.1948 7 13.5351V3ZM18 13.5351V11H20V17C20 19.2091 18.2091 21 16 21C13.7909 21 12 19.2091 12 17C12 14.7909 13.7909 13 16 13C16.7286 13 17.4117 13.1948 18 13.5351ZM5 19C6.10457 19 7 18.1046 7 17C7 15.8954 6.10457 15 5 15C3.89543 15 3 15.8954 3 17C3 18.1046 3.89543 19 5 19ZM16 19C17.1046 19 18 18.1046 18 17C18 15.8954 17.1046 15 16 15C14.8954 15 14 15.8954 14 17C14 18.1046 14.8954 19 16 19Z"></path></svg>
+                        <div id="text2" class="text">
+                            Tracks
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="background"></div>
+                <div class="mood"></div>
+            </div>
+            <div class="right" id="right">
+
+                <div class="sideText">
+                    <div id="studyInput">Study
+                    </div>
+                    <input type='text' name="studyInput" id="studyInputVal" placeholder="25">
+                </div>
+
+
+
+                <div class="sideText">
+                    <div id="breakInput">Break
+                    </div>
+                    <input type='text' name="breakInput" id="breakInputVal" placeholder="5">
+                </div>
+
+                <div class="sideText">
+                    <div id="longInput">long break
+                    </div>
+                    <input type='text' name="longInput" id="longInputVal" placeholder="15">
+                </div>
+
+                <div class="lowerbtn">
+                    <div id="save">
+                        <img src="check.png" alt="">
+                    </div>
+                    <div id="close">
+                        <img src="cross.png" alt="">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="rightbg" id="rightbg">
+                <div class="bgSection">
+                    <img class="imgbg" id="bg0" src="i0.jpg" alt="" srcset="">
+                    <img class="imgbg" id="bg1" src="i1.jpg" alt="" srcset="">
+                    <img class="imgbg" id="bg2" src="i2.jpg" alt="" srcset="">
+                    <img class="imgbg" id="bg3" src="i3.jpg" alt="" srcset="">
+                    <img class="imgbg" id="bg4" src="i4.jpg" alt="" srcset="">
+                    <img class="imgbg" id="bg5" src="i5.jpg" alt="" srcset="">
+                </div>
+               
+                
+                    <!-- <div class="lowerbtnbg">
+                    <div id="savebg">
+                        <img src="check.png" alt="">
+                    </div>
+                    <div id="closebg">
+                        <img src="cross.png" alt="">
+                    </div>
+                </div> -->
+
+                <div class="lowerbtn" id="bgbtns">
+                    <div id="pauseVideo">
+                        <img src="play.png" alt="">
+                    </div>
+                    <div id="stopVideo" class="stopbtns">
+                        <img src="stop.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="music" id="music">
+                <div class="songSection">
+                <div class="song" id="s1">
+
+                    <audio id="song" src="" loop></audio>
+                    <img id="song1" src="music.png" alt="" srcset="">
+                    <div class="songName">
+                        Future Car
+                    </div>
+                </div>
+                <div class="song"
+                id="s2">
+                    <img id="song2" src="music.png" alt="" srcset="">
+                    <div class="songName">
+                        Midnight Drive
+                    </div>
+                </div>
+                <div class="song"
+                id="s3">
+                
+                
+                    <img src="music.png" alt="" srcset="">
+                    <div class="songName">
+                       welcome to the jungle
+                    </div>
+                </div>
+                <div class="song"
+                id="s4">
+                
+                
+                    <img src="music.png" alt="" srcset="">
+                    <div class="songName">
+                        Lofi music
+                    </div>
+
+                </div>
+                
+                <div class="song"
+                id="s5">
+                
+               
+                    <img src="music.png" alt="" srcset="">
+                    <div class="songName">
+                        Rain wisper
+                    </div>
+
+                </div>
+                
+                <div class="song"
+                id="s6" >
+                
+               
+                    <img src="music.png" alt="" srcset="">
+                    <div  class="songName">
+                        Wavy mood
+                    </div>
+
+                </div>
+
+                </div>
+                <div class="lowerbtn" id="songbtns">
+                    <div id="pauseSong">
+                        <img src="pause.png" alt="">
+                    </div>
+                    <div id="stopSong" class="stopbtns">
+                        <img src="stop.png" alt="">
+                    </div>
+                </div>
+
+                
+
+                
+              
+        
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="script.js"></script>
+
+<script src="themes.js"></script>
+<script src="rightscript.js"></script>
+<script src="poss.js"></script>
+<script src="alt.js"></script>
+<script src="audio.js"></script>
+</html>

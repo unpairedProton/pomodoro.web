@@ -1,0 +1,35 @@
+            
+@import url(var.css);
+
+@font-face {
+    font-family: gameFont;
+    src: url(gamer.ttf);
+}
+
+@font-face {
+    font-family: motaFont;
+    src: url(boorsok.otf);
+}
+
+/* @font-face {
+    font-family: woody;
+    src: var(--woodyFont);
+} */
+
+@font-face {
+    font-family: arcade;
+    src: url(arcadefont.ttf);
+    
+}
+
+@font-face {
+    font-family: playsmallfont;
+    src: url(sungarfont.ttf);
+}
+
+@font-face {
+    font-family: playlargefont;
+    src: url(fingerfont.ttf);
+}
+
+
